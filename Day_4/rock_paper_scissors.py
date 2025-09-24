@@ -18,7 +18,7 @@ paper = '''
 
 scissors = '''
     _______
----'   ____)____
+---'   ____)____] + hands[user
           ______)
        __________)
       (____)
@@ -50,7 +50,7 @@ while True:
 computer_hand = random.randint(0,2)
 
 # Split each string into lines
-user_lines = ["You Played".ljust(20)] + hands[user_hand].rstrip().split('\n')
+user_lines = ["You Played"] + hands[user_hand].rstrip().split('\n')
 computer_lines = ["Computer Played"] + hands[computer_hand].rstrip().split('\n')
 
 # Print them side by side
